@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="以智能客服项目为例，了解企业知识库问答、业务接口调用、多轮对话、售后流程与人工确认的实现能力。">
+  <meta property="og:title" content="AI 应用能力展示 · 企业服务案例">
+  <meta property="og:description" content="从企业知识接入到业务流程执行，用五个具体案例了解已实现的 AI 客服能力。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mfunzero.github.io/ai-project-showcase/">
+  <meta property="og:image" content="https://mfunzero.github.io/ai-project-showcase/assets/cover.jpg">
+  <meta name="theme-color" content="#2341dc">
+  <title>AI 应用能力展示 · 企业服务案例</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='9' fill='%232341dc'/><path d='m16 5 3 8 8 3-8 3-3 8-3-8-8-3 8-3z' fill='white'/></svg>">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./showcase.js" defer></script>
+</head>
+<body>
+  <header class="nav wrap">
+    <a class="brand" href="#top"><span class="brand-icon" aria-hidden="true">✦</span><span>AI 应用能力展示<small>企业服务案例</small></span></a>
+    <nav aria-label="页面导航"><a href="#capabilities">实现能力</a><a href="#cases">查看案例</a><a class="nav-download" href="./output/pdf/ai-application-brochure.pdf" download>下载介绍手册 ↗</a></nav>
+  </header>
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span>企业服务 · 智能客服项目</div>
+        <h1><span class="headline-part">把企业知识</span><span class="headline-part">与业务流程，</span><br>接入 <em>AI 服务</em>。</h1>
+        <p class="intro">从政策问答到订单查询，从连续追问到工单登记。<br class="desktop">用一套已经运行并验证的智能客服 Demo，展示我们可以实现的应用能力。</p>
+        <div class="hero-actions"><a class="button primary" href="#cases">看五个具体案例 ↗</a><a class="button secondary" href="./output/pdf/ai-application-brochure.pdf" download>下载 PDF 手册 ↓</a></div>
+        <div class="proof-line"><span>知识来源可查看</span><span>业务工具可编排</span><span>关键操作先确认</span></div>
+      </div>
+      <div class="blueprint" aria-label="企业资料与业务系统通过智能体连接的示意图">
+        <div class="blueprint-head"><span>从资料到行动</span><span class="small-tag">实现流程示意</span></div>
+        <div class="system-node input-node"><span class="node-icon">▤</span><div><strong>企业知识与业务资料</strong><small>商品说明 · 售后政策 · 常见问答</small></div></div>
+        <div class="connector"></div>
+        <div class="agent-node"><span>✦</span><div><strong>AI 服务编排</strong><small>理解问题，获取依据，选择工具</small></div><b>AGENT</b></div>
+        <div class="branch-nodes"><div><span>01</span><strong>知识库检索</strong><small>找到回答依据</small></div><div><span>02</span><strong>业务接口调用</strong><small>查询订单与物流</small></div><div><span>03</span><strong>流程与确认</strong><small>选择订单，确认工单</small></div></div>
+        <div class="result-node"><span>✓</span><strong>清晰的回答 + 可追溯的执行记录</strong></div>
+        <div class="blueprint-foot">当前展示案例：智能客服 Demo</div>
+      </div>
+    </section>
+
+    <section class="overview wrap">
+      <div class="overview-intro"><span class="kicker">这个项目展示什么</span><h2>让 AI 接上企业的知识和工具</h2><p>客户的很多问题，需要先查资料、再查系统、最后确认操作。这个项目把这些环节连成一条可观察的服务流程，让我们能够演示每一步如何实现。</p></div>
+      <div class="numbers"><div><strong>5</strong><span>可查看的演示场景</span></div><div><strong>52</strong><span>已向量化的知识块</span></div><div><strong>6</strong><span>商品与售后资料</span></div><p>知识库数字来自本机 Demo 验证结果。</p></div>
+    </section>
+
+    <section id="capabilities" class="section wrap">
+      <div class="section-head"><div><span class="kicker">01 / 已实现的功能</span><h2>六类能力，解决具体服务任务</h2></div><p>点击功能卡片，查看对应案例或项目界面。</p></div>
+      <div class="capability-grid">
+        <button class="capability" data-case="knowledge"><span class="index">01</span><h3>企业知识库问答 <span>↗</span></h3><p>把业务资料整理成可检索的知识库，回答附来源，便于核对依据。</p><small>常见问题 · 政策说明 · 原文引用</small></button>
+        <button class="capability" data-case="logistics"><span class="index">02</span><h3>订单与物流查询 <span>↗</span></h3><p>理解订单号，自动串联订单和物流工具，把接口结果组织成回复。</p><small>业务查询 · 工具编排 · 结果展示</small></button>
+        <button class="capability" data-case="memory"><span class="index">03</span><h3>连续对话与追问 <span>↗</span></h3><p>利用当前会话上下文，理解“这单”“它”等没有重复信息的追问。</p><small>上下文管理 · 指代消解</small></button>
+        <button class="capability" data-case="refund"><span class="index">04</span><h3>售后流程引导 <span>↗</span></h3><p>缺少订单先选择，再检索售后政策，符合条件时提供申请入口。</p><small>订单选择 · 政策判断 · 申请登记</small></button>
+        <button class="capability" data-case="ticket"><span class="index">05</span><h3>人工工单登记 <span>↗</span></h3><p>整理用户的问题，先展示工单预览，确认后写入数据库并返回单号。</p><small>预览确认 · 写入控制 · 业务落库</small></button>
+        <a class="capability" href="#interface"><span class="index">06</span><h3>知识管理与补充 <span>↗</span></h3><p>录入资料、预览切块、完成向量化，为后续服务更新业务知识。</p><small>资料录入 · 内容切块 · 向量化</small></a>
+      </div>
+    </section>
+
+    <section id="cases" class="section wrap">
+      <div class="section-head"><div><span class="kicker">02 / 五个演示案例</span><h2>用真实运行的结果，讲清实现方式</h2></div><p>下面是本机验证结果的摘录，点击标签切换案例。</p></div>
+      <div class="case-tabs" role="tablist" aria-label="项目案例">
+        <button id="tab-knowledge" role="tab" aria-selected="true" aria-controls="case-panel" data-case="knowledge">知识问答</button><button id="tab-logistics" role="tab" aria-selected="false" aria-controls="case-panel" data-case="logistics">订单物流</button><button id="tab-memory" role="tab" aria-selected="false" aria-controls="case-panel" data-case="memory">多轮追问</button><button id="tab-refund" role="tab" aria-selected="false" aria-controls="case-panel" data-case="refund">售后流程</button><button id="tab-ticket" role="tab" aria-selected="false" aria-controls="case-panel" data-case="ticket">工单确认</button>
+      </div>
+      <div id="case-panel" class="case-panel" role="tabpanel" aria-labelledby="tab-knowledge">
+        <aside class="case-guide"><span class="kicker">案例说明</span><h3 id="case-title"></h3><p id="case-description"></p><div class="case-value"><span>这说明可以实现</span><p id="case-value"></p></div></aside>
+        <div class="conversation"><div class="panel-head"><span>演示结果摘录</span><small>固定案例展示</small></div><div id="case-dialogue" class="dialogue"></div></div>
+        <aside class="execution"><div class="panel-head"><span>实现过程</span><small>对应验证记录</small></div><div id="case-steps" class="case-steps"></div></aside>
+      </div>
+      <p class="case-note">本页是项目介绍与案例展示，不会实时调用 AI。演示商品、订单和物流为模拟数据；模型请求、知识检索与工单写入已在本机完成验证。退款仅登记申请，人工转接未连接真人坐席。</p>
+      <noscript><p class="case-note">请启用 JavaScript 查看可切换案例；也可以直接下载上方 PDF 手册阅读完整介绍。</p></noscript>
+    </section>
+
+    <section id="interface" class="section wrap">
+      <div class="section-head"><div><span class="kicker">03 / 实际项目界面</span><h2>介绍可以看，流程也已经跑通</h2></div><p>下面是实际运行界面的截图，点击可以放大查看。</p></div>
+      <button class="screenshot-button" id="open-screenshot" aria-label="放大查看实际项目界面"><img src="./assets/demo-interface.jpg" width="1280" height="900" loading="lazy" alt="本机客服 Demo 的售后场景，包含订单选择、客服回答、知识来源与工具执行记录"><span>查看实际界面 ↗</span></button>
+      <div class="interface-caption"><p>界面将场景示例、客服对话和执行记录放在一起，方便在现场说明 AI 查询了什么、依据在哪里，以及什么时候需要用户确认。</p><span>本机 Demo 截图 · 模拟业务数据</span></div>
+    </section>
+
+    <section id="implementation" class="section wrap">
+      <div class="section-head"><div><span class="kicker">04 / 技术与业务的连接方式</span><h2>让模型负责理解，让工具与流程负责执行</h2></div></div>
+      <div class="pipeline"><div><b>01</b><h3>理解问题</h3><p>识别意图，处理对话上下文</p></div><span>→</span><div><b>02</b><h3>获取依据</h3><p>检索知识，调用业务工具</p></div><span>→</span><div><b>03</b><h3>控制操作</h3><p>证据不足兜底，重要操作确认</p></div><span>→</span><div><b>04</b><h3>呈现结果</h3><p>输出回答、引用与执行记录</p></div></div>
+      <div class="implementation-grid"><div><h3>企业服务的适配方向</h3><p>以这套客服流程为基础，可继续适配企业自己的资料、订单系统、售后规则与工单系统。接入实际业务前，需要完成接口对接、身份验证、权限配置和业务验收。</p><details><summary>展开技术组成</summary><p>FastAPI 提供接口；LangGraph / LangChain 编排对话与流程；DeepSeek 提供聊天能力；Milvus 支持向量和关键词混合检索；重排模型筛选证据；MySQL 保存知识、会话与工单；MCP 接入物流和售后工具。</p></details></div><div class="boundary"><span class="kicker">当前展示范围</span><ul><li>知识问答、业务查询和确认流程已在 Demo 中验证。</li><li>当前展示基于模拟店铺数据，尚未连接真实电商店铺。</li><li>主题分类器训练与 Langfuse 观测代码已包含，独立服务未启用。</li></ul></div></div>
+    </section>
+
+    <section class="closing wrap"><div><span class="kicker">适合转发的项目介绍</span><h2>先从一份资料、一条流程开始。</h2><p>用一个具体的业务场景，验证 AI 如何接入你的企业服务。</p></div><div class="closing-actions"><a class="button primary" href="./output/pdf/ai-application-brochure.pdf" download>下载 PDF 手册 ↓</a><button class="button secondary" id="copy-link">复制网页链接 ↗</button><span id="share-status" role="status"></span></div></section>
+  </main>
+  <footer class="footer wrap"><span>AI 应用能力展示 · 智能客服案例</span><span>基于 MewHelp 课程项目完成本地集成、验证与展示页制作。</span><span>项目介绍页 · 不含在线客服服务</span></footer>
+  <dialog id="screenshot-dialog" aria-label="实际项目界面放大图"><button id="close-screenshot" aria-label="关闭放大图">关闭 ×</button><img src="./assets/demo-interface.jpg" alt="实际项目界面放大图"></dialog>
+</body>
+</html>
